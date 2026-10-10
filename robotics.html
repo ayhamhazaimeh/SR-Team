@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>عن تخصص علم الروبوتات</title>
+<link rel="icon" href="images/icon.jpeg" type="images/jpeg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#f2f6fa;--ink:#13233a;--muted:#51627a;--card:#fff;--line:#d5dee9;--accent:#0b7f86;--hero:#13233a;--hero-ink:#f2f6fa;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1724;--ink:#e6edf6;--muted:#9fb0c6;--card:#16243a;--line:#26364f;--accent:#46c2c9;--hero:#07101c;--hero-ink:#e6edf6}}
+:root[data-theme="dark"]{--bg:#0e1724;--ink:#e6edf6;--muted:#9fb0c6;--card:#16243a;--line:#26364f;--accent:#46c2c9;--hero:#07101c;--hero-ink:#e6edf6}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;line-height:1.8}
+.hero{background:var(--hero);color:var(--hero-ink);padding:40px 24px 64px}
+.wrap{max-width:880px;margin:0 auto}
+.nav{display:flex;gap:24px;margin-bottom:40px;font-weight:500}
+.nav a{color:var(--hero-ink);text-decoration:none;opacity:.75;padding-bottom:4px;border-bottom:2px solid transparent}
+.nav a:hover,.nav a[aria-current="page"]{opacity:1;border-color:var(--accent)}
+.nav a:focus-visible{opacity:1;outline:2px solid var(--accent);outline-offset:4px}
+.hero h1{font-size:clamp(2.2rem,7vw,4rem);line-height:1.25;margin:0 0 16px;font-weight:700}
+.hero p{max-width:34em;margin:0;font-size:1.15rem;opacity:.85}
+.code{direction:ltr;text-align:left;display:inline-block;margin-bottom:20px;padding:4px 14px;border:1px solid var(--accent);border-radius:6px;color:var(--accent);font-family:Consolas,monospace;font-size:.95rem}
+main{position:relative;overflow:hidden;padding:48px 24px 64px}
+main .wrap{position:relative;z-index:1}
+h2{font-size:1.5rem;margin:0 0 16px}
+section{margin-bottom:56px}
+.lead{max-width:42em;margin:0 0 14px;font-size:1.08rem}
+.steps{counter-reset:s;list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.steps li::before{content:counter(s);display:block;color:var(--accent);font-weight:700;font-size:1.2rem;line-height:1.4}
+.steps b{display:block}
+.steps span{color:var(--muted);font-size:.9rem;line-height:1.5;display:block}
+.fields{list-style:none;margin:0;padding:0;max-width:44em}
+.fields li{border-right:3px solid var(--accent);padding:2px 14px;margin-bottom:14px}
+.fields b{display:block}
+.fields span{color:var(--muted)}
+.branches{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.branch{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px}
+.branch h3{margin:0 0 8px;font-size:1.15rem}
+.branch p{margin:0 0 14px}
+.jobs{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.jobs li{direction:ltr;unicode-bidi:isolate;font-size:.85rem;line-height:1.6;padding:2px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+.note{max-width:44em;margin:20px 0 0;color:var(--muted);font-size:.95rem}
+.back{display:inline-block;margin-top:8px;color:var(--accent);font-weight:500;text-decoration:none;border-bottom:2px solid var(--accent)}
+.back:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+footer{padding:24px;text-align:center;color:var(--muted);font-size:.9rem}
+
+/* Side decorations: code on the left, circuits and gears on the right */
+.deco{display:none;position:absolute;top:0;bottom:0;width:calc((100% - 880px)/2 - 20px);color:var(--accent);pointer-events:none}
+.deco-code{left:0;-webkit-mask-image:linear-gradient(to right,#000 35%,transparent);mask-image:linear-gradient(to right,#000 35%,transparent)}
+.deco-robot{right:0;-webkit-mask-image:linear-gradient(to left,#000 35%,transparent);mask-image:linear-gradient(to left,#000 35%,transparent)}
+.deco i{position:absolute;inset:0;background:currentColor;opacity:.3;-webkit-mask-repeat:repeat;mask-repeat:repeat;-webkit-mask-size:110px 400px;mask-size:110px 400px;-webkit-mask-image:var(--tile);mask-image:var(--tile)}
+.deco-code i{--tile:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='110' height='400' viewBox='0 0 110 400' font-family='Consolas,Menlo,monospace' font-weight='700'%3E%3Cg fill='%23000'%3E%3Ctext x='8' y='44' font-size='26'%3E%26lt;/%26gt;%3C/text%3E%3Ctext x='56' y='116' font-size='24'%3E{ }%3C/text%3E%3Ctext x='14' y='178' font-size='22'%3E01%3C/text%3E%3Ctext x='58' y='236' font-size='24'%3E( )%3C/text%3E%3Ctext x='10' y='296' font-size='24'%3E=%26gt;%3C/text%3E%3Ctext x='52' y='352' font-size='24'%3E[ ]%3C/text%3E%3C/g%3E%3C/svg%3E");animation:drift-up 40s linear infinite}
+.deco-robot i{--tile:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='110' height='400' viewBox='0 0 110 400'%3E%3Cg fill='none' stroke='%23000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M30 0V400M30 70H78V130M30 190H60V250H92M30 300H48V360H80'/%3E%3C/g%3E%3Cg fill='%23000'%3E%3Ccircle cx='78' cy='130' r='5'/%3E%3Ccircle cx='92' cy='250' r='5'/%3E%3Ccircle cx='80' cy='360' r='5'/%3E%3Ccircle cx='30' cy='70' r='4'/%3E%3Ccircle cx='30' cy='190' r='4'/%3E%3Ccircle cx='30' cy='300' r='4'/%3E%3C/g%3E%3C/svg%3E");animation:drift-down 50s linear infinite}
+.gear{position:absolute;right:14px;width:56px;height:56px;opacity:.55;animation:spin 28s linear infinite}
+.gear.g1{top:4%}
+.gear.g2{top:36%;width:44px;height:44px;right:40px;animation-direction:reverse;animation-duration:20s}
+.gear.g3{top:70%}
+@keyframes drift-up{from{-webkit-mask-position:0 0;mask-position:0 0}to{-webkit-mask-position:0 -400px;mask-position:0 -400px}}
+@keyframes drift-down{from{-webkit-mask-position:0 -400px;mask-position:0 -400px}to{-webkit-mask-position:0 0;mask-position:0 0}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (min-width:1100px){.deco{display:block}}
+@media (prefers-reduced-motion:reduce){.deco i,.gear{animation:none}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<nav class="nav"><a href="index.html">Home</a><a href="major.html">Software Engineering </a><a href="robotics.html" aria-current="page"> Robotics science </a></nav>
+<div class="code">robot.about()</div>
+<h1>عن تخصص علم الروبوتات</h1>
+<p>ما هو التخصص، وأين يعمل خريجوه، وما الأفرع التي يمكنك أن تتخصص فيها وطبيعة العمل في كل فرع.</p>
+</div></header>
+<main>
+<div class="deco deco-code" aria-hidden="true"><i></i></div>
+<div class="deco deco-robot" aria-hidden="true"><i></i>
+<svg class="gear g1" viewBox="-30 -30 60 60"><g fill="none" stroke="currentColor"><circle r="21" stroke-width="8" stroke-dasharray="6.6 6.6"/><circle r="15" stroke-width="3"/><circle r="5" fill="currentColor"/></g></svg>
+<svg class="gear g2" viewBox="-30 -30 60 60"><g fill="none" stroke="currentColor"><circle r="21" stroke-width="8" stroke-dasharray="6.6 6.6"/><circle r="15" stroke-width="3"/><circle r="5" fill="currentColor"/></g></svg>
+<svg class="gear g3" viewBox="-30 -30 60 60"><g fill="none" stroke="currentColor"><circle r="21" stroke-width="8" stroke-dasharray="6.6 6.6"/><circle r="15" stroke-width="3"/><circle r="5" fill="currentColor"/></g></svg>
+</div>
+<div class="wrap">
+
+<section>
+<h2>ما هو علم الروبوتات؟</h2>
+<p class="lead">علم الروبوتات تخصص يجمع بين البرمجة والإلكترونيات والميكانيكا والذكاء الاصطناعي، لتصمّم الروبوتات وتبنيها وتبرمجها وتتحكم بها، فتنفّذ مهام في المصانع والمستشفيات والمزارع وغيرها.</p>
+<p class="lead">الفرق بينه وبين البرمجة وحدها أن الكود هنا يتعامل مع العالم الحقيقي: حساسات ومحركات وحدود فيزيائية وأخطاء قياس، وتختبر عملك على جهاز حقيقي وليس على الشاشة فقط.</p>
+<p class="lead">يعمل أي روبوت تقريباً بحلقة متكررة من خمس مراحل:</p>
+<ol class="steps">
+<li><b>الاستشعار</b><span>جمع البيانات من الحساسات والكاميرات</span></li>
+<li><b>الإدراك</b><span>فهم ما يحيط بالروبوت</span></li>
+<li><b>القرار</b><span>اختيار التصرف المناسب</span></li>
+<li><b>التحكم</b><span>إرسال أوامر دقيقة للمحركات</span></li>
+<li><b>التنفيذ</b><span>الحركة والتفاعل مع البيئة</span></li>
+</ol>
+</section>
+
+<section>
+<h2>مجالات العمل</h2>
+<ul class="fields">
+<li><b>التصنيع والأتمتة الصناعية</b><span>خطوط إنتاج وأذرع روبوتية تعمل بدقة وسرعة وبأمان.</span></li>
+<li><b>الطب والرعاية الصحية</b><span>روبوتات الجراحة والتأهيل والأطراف الصناعية.</span></li>
+<li><b>الزراعة الذكية</b><span>الري الآلي والطائرات المسيّرة ومراقبة المحاصيل وقطافها.</span></li>
+<li><b>النقل والمستودعات</b><span>مركبات ذاتية القيادة وروبوتات نقل وفرز البضائع.</span></li>
+<li><b>الطائرات المسيّرة والاستكشاف</b><span>التصوير والمسح والمراقبة والوصول إلى أماكن يصعب على الإنسان دخولها.</span></li>
+<li><b>البحث العلمي والتعليم والشركات الناشئة</b><span>تطوير تقنيات جديدة أو تأسيس منتجك الروبوتي الخاص.</span></li>
+</ul>
+</section>
+
+<section>
+<h2>الأفرع التي يمكنك التخصص فيها</h2>
+<div class="branches">
+
+<article class="branch">
+<h3>الأنظمة المدمجة وإنترنت الأشياء</h3>
+<p>تبرمج المتحكمات الصغيرة التي تقرأ الحساسات وتشغّل المحركات، وتصمم دوائر وأجهزة ذكية متصلة بالإنترنت.</p>
+<ul class="jobs"><li>Embedded Systems Engineer</li><li>Firmware Engineer</li><li>IoT Engineer</li></ul>
+</article>
+
+<article class="branch">
+<h3>التحكم والأتمتة الصناعية</h3>
+<p>تصمم أنظمة تتحكم بحركة الآلات وسرعتها ودقتها، وتؤتمت خطوط الإنتاج باستخدام وحدات التحكم الصناعية.</p>
+<ul class="jobs"><li>Control Engineer</li><li>Automation Engineer</li><li>PLC Programmer</li></ul>
+</article>
+
+<article class="branch">
+<h3>الرؤية الحاسوبية والذكاء الاصطناعي</h3>
+<p>تعلّم الروبوت أن يرى ويفهم: يتعرف على الأشياء والوجوه والعوائق من الكاميرات، ويتعلم من البيانات ليتحسن أداؤه.</p>
+<ul class="jobs"><li>Computer Vision Engineer</li><li>Machine Learning Engineer</li><li>Perception Engineer</li></ul>
+</article>
+
+<article class="branch">
+<h3>برمجيات الروبوتات والملاحة الذاتية</h3>
+<p>تبرمج عقل الروبوت: رسم الخرائط وتحديد موقعه وتخطيط المسار وتفادي العوائق، باستخدام أدوات مثل ROS.</p>
+<ul class="jobs"><li>Robotics Software Engineer</li><li>Autonomous Systems Engineer</li><li>Motion Planning Engineer</li></ul>
+</article>
+
+<article class="branch">
+<h3>الميكاترونكس والتصميم الميكانيكي</h3>
+<p>تصمم هيكل الروبوت ومفاصله وأذرعه ببرامج التصميم ثلاثي الأبعاد، وتختار المحركات والمواد، وتصنّع النماذج الأولية.</p>
+<ul class="jobs"><li>Mechatronics Engineer</li><li>Robot Design Engineer</li><li>Mechanical Design Engineer</li></ul>
+</article>
+
+<article class="branch">
+<h3>الطائرات المسيّرة والمركبات ذاتية القيادة</h3>
+<p>تطوّر أنظمة الطيران والتوجيه والاستقرار والتواصل مع المحطات الأرضية، وتختبرها في ظروف تشغيل حقيقية.</p>
+<ul class="jobs"><li>UAV / Drone Engineer</li><li>Flight Control Engineer</li><li>Autonomous Vehicle Engineer</li></ul>
+</article>
+
+<article class="branch">
+<h3>الروبوتات الطبية والخدمية</h3>
+<p>تطوّر روبوتات تساعد الناس مباشرة: أدوات مساندة للجراحين، وأجهزة تأهيل، وروبوتات استقبال وتوصيل داخل المباني.</p>
+<ul class="jobs"><li>Medical Robotics Engineer</li><li>Rehabilitation Robotics Engineer</li><li>Service Robot Developer</li></ul>
+</article>
+
+<article class="branch">
+<h3>تكامل الأنظمة والاختبار</h3>
+<p>تجمع أجزاء الروبوت من حساسات ومحركات وبرمجيات في نظام واحد يعمل، وتختبره وتصلح مشاكله قبل تسليمه للعميل.</p>
+<ul class="jobs"><li>Systems Integration Engineer</li><li>Test Engineer</li><li>Field Application Engineer</li></ul>
+</article>
+
+</div>
+<p class="note">هذه أمثلة عامة على المسارات المهنية، ويمكنك الجمع بين أكثر من فرع. المواد الاختيارية المتاحة لكل فرع تختلف حسب خطة القسم، فاسأل المرشد عن التفاصيل.</p>
+</section>
+
+<a class="back" href="index.html">العودة إلى الصفحة الرئيسية</a>
+
+</div></main>
+<footer>قسم هندسة البرمجيات وعلم الروبوتات</footer>
+</body>
+</html>
